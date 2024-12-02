@@ -1,0 +1,2 @@
+name "Quazar Conundrum"
+about "Quazar conundrum: a Story driven addon about a madman and his fleet of semi-sentient machines"

@@ -1,0 +1,24 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Quazar Conundrum
+Upstream-Contact: Anerix Cormin <overseeranerix@gmail.com>
+Source: {{your plugin github url here}}
+
+Files: *
+Copyright: Anerix Cormin <overseeranerix@gmail.com>
+
+Files:
+ icon*.png
+Copyright: Anerix Cormin <overseeranerix@gmail.com>
+License: Public Domain
+
+
+Files:
+ sound/mirilight, omicronspace, gravespace, exospace, mirispace, miriheavy, deadzonelight, deadzoneheavy, riftassult, deadzonespace
+ all ripped from the abandonware game, Freelancer
+ Copyright: microsoft corporation
+ license: UNKNOWN; POSSIBLY EXPIRED
+ comment: while i was able to track the proper copyright entry down (https://publicrecords.copyright.gov/detailed-record/16119286) i am unsure as to weather or not it is renwed or if it conpleatly expired, as such i do not claim any work as my own for these sounds nor do i claim permission from the origonal owners, all credit goes to the origonal owners and composers.
+ sound/*
+ Copyright:Rusland Salimov <crtheadmusic@gmail.com>
+ License:CC BY-SA 3.0
+ Comment: Muisc by CRT_Head, follow him on bandicamp and souncloud (https://crthead.bandcamp.com/album/ikiru-ikiru-ikiru, https://soundcloud.com/crt_head), use has been authorised with proper attribution.

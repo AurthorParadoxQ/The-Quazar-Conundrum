@@ -1,0 +1,42 @@
+# Copyright (c) 2014 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+event Instantiation
+	date 24 5 3015
+	has "event: war begins"
+	
+
+mission "The Alf of Wezen"
+	description "A strange man from Tarazed is looking for an escort."
+	
+	source
+		Wayfarer
+	to offer
+		"visited planet:" Wayfarer
+		has "event: war begins"
+
+	on offer
+		conversation
+			`You get off your ship and enter the spaceport. As you head to the bar you notice a stange man sitting at the table, alongside him is a Quarg, who he seems to be having a conversation with.`
+			choice
+			`	Take a seat next to the man.`
+				goto bartalk
+			`	leave them to their bussiness.`	
+				defer
+			label bartalk
+			`	You take a seat next to the strange man, making sure to not draw any attention. You notice something is slightly off about the man sitting next to you, while he looks fairly human, all things considered, his ears seem to be almost..Elf-like`
+			`	As you look at the man you cant but help overhear their conversation.`
+			`	"Are you certain you wish to do this, friend? I am unsure if any human has traveled that far beyond the graves, my kin my not be so accepting of you as we are here."`
+			`	The Elf's response is cold and certian, "Yes. With the Civil War begining, I do not think it would be wise for me to remain in human space any longer; nor do I beleive I can seek refuge within Hai space this time."`
+			`	The Quarg seems to accept the Elfs response, but also has a worried look on its face "I could arrange for a-" the Elf cuts him off immediately, "No Reth, you have well overstepped your limited authority by bringing me into contact with your kin on the far reaches, I cannot ask you to do any more than that."`
+			`	

@@ -1,0 +1,171 @@
+system Purferation
+	pos 479.042 269.643
+	government Deadzones
+	attributes breach "notable star" wormhole
+	music music/combat/deadzone/riftassault
+	habitable 0
+	belt 0
+	haze _menu/haze-deadzonedeep
+	link "Deadzone One"
+	hazard "Black Hole Accretion Disk" 30
+	hazard "Deadzone Radiation" 3
+	object
+		sprite star/nova-old-core
+			scale 10
+			"frame rate" 24
+		distance 1000
+		period 100
+		offset 25
+	object
+		sprite star/coal-black-hole
+			scale 2
+			"frame rate" 20
+		distance 500
+		period 100
+		hazard "Black Hole Accretion Disk" 1
+	object "Layline Breach"
+		sprite planet/layline-rift
+			scale 3
+			"frame rate" 20
+		distance 6000
+	object "The Observer"
+		sprite planet/gas9-hot
+		distance 10000
+		period 566
+
+system Delia
+	music music/ambient/graveyard/gravespace
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/dyson1
+			scale 0.5
+		distance 160.21
+		period 36.643
+		offset 217.144
+	object
+		sprite planet/dyson2
+			scale 0.5
+		distance 160.21
+		period 36.643
+		offset 181.163
+	object
+		sprite planet/dyson3
+			scale 0.5
+		distance 160.21
+		period 36.643
+		offset 294.239
+	object
+		sprite planet/cloud3
+		distance 589.01
+		period 258.312
+	object
+		sprite planet/desert9-b
+		distance 748.5
+		period 370.04
+	object
+		sprite planet/gas11
+		distance 2258.66
+		period 1939.71
+		object
+			sprite planet/station3bd
+				scale 0.5
+			distance 255
+			period 13.43
+		object
+			sprite planet/luna
+			distance 367
+			period 23.189
+		object
+			sprite planet/rock7-b
+			distance 519
+			period 38.997
+	object
+		sprite planet/browndwarf-y
+		distance 4586
+		period 5611.94
+
+system "Deadzone One"
+	pos 394.709 298.828
+	government Deadzones
+	music music/combat/deadzone/deadzoneheavy
+	habitable 0
+	haze _menu/haze-deadzonelarge
+	link "Deadzone Four"
+	link Purferation
+	object
+		sprite star/g5-old
+			scale 3
+			"frame rate" 20
+		period 25
+	object DZ-041
+		sprite planet/rock0-b
+		distance 500
+		period 30
+
+system "Deadzone Two"
+	pos 335.597 316.014
+	government Deadzones
+	music music/combat/deadzone/deadzonelight
+	habitable 0
+	belt 0
+	haze _menu/haze-deadzoneedge
+	link Edusa
+	asteroids "large metal" 25 10
+	asteroids "medium rock" 100 0
+	hazard "Deadzone Radiation" 2
+	object
+		sprite star/neutron
+			scale 10
+		period 2
+		hazard "Neutron Star Magnetic Field" 1
+
+galaxy "label deadzones"
+	pos 500 500
+	sprite label/deadzone
+
+system "Deadzone Three"
+	pos 370.223 341.912
+	government Deadzones
+	music music/combat/deadzone/deadzoneheavy
+	habitable 0
+	haze _menu/haze-deadzonelarge
+	link "Deadzone Five"
+	object Deadworld
+		sprite planet/Craig
+		distance 2000
+		period 25
+	object
+		sprite star/k-supergiant
+			scale 3
+		hazard "Deadzone Radiation Feild" 1000
+	object
+		sprite star/carbon
+			scale 0.5
+		distance 12500
+		period 255
+	object
+		sprite planet/gas11
+			scale 3
+		distance 6500
+		period 83
+
+planet "Layline Breach"
+	attributes breach
+	spaceport ""
+	government Uninhabited
+	bribe 0
+	security 0
+
+wormhole "Layline Breach"
+	"display name" "Layline Breach"
+	mappable
+	link Hyperion Purferation
+	link Purferation Hyperion
+
+planet "Layline Breach Hyperion"
+	attributes breach
+	spaceport ""
+	government Deadzones
+

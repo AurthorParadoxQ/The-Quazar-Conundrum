@@ -1,0 +1,17 @@
+outfit "Gauss Gat"
+
+outfit Qdrive
+	category Systems
+	cost 125000000
+	"mass" 30
+	"outfit space" -30
+	"hyperdrive" 1
+	"jump speed" 0.44
+	"jump fuel" 100
+	"hyperdrive sound" fx/qdrive
+	description "The Layline Enhanced Quantum Tunnel Device(Qdrive for short), is an experimental prototype drive aimed at granting higher jump capability at reduced fuel costs; how this is achived is a closly gaurded secret by Paradox himself"
+
+outfit Hyperdrive
+	plural Hyperdrives
+	"hyperdrive sound" hyperdrive
+

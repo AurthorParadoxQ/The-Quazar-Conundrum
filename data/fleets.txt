@@ -1,0 +1,9 @@
+fleet "Meson Arena Test"
+	government "Quazar Worlds"
+	cargo 1
+	personality
+		confusion 2
+		pacifist pacifist pacifist pacifist pacifist forebearing forebearing forebearing pacifist pacifist pacifist pacifist pacifist pacifist pacifist pacifist pacifist forebearing pacifist pacifist pacifist pacifist pacifist pacifist pacifist pacifist pacifist pacifist pacifist pacifist pacifist pacifist pacifist pacifist
+	variant
+		`Protoaster "MESON"`
+

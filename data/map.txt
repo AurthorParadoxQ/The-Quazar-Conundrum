@@ -1,0 +1,2048 @@
+system Purferation
+	pos 479.042 269.643
+	government Deadzones
+	attributes breach "notable star" wormhole
+	music music/combat/deadzone/riftassault
+	habitable 0
+	belt 0
+	haze _menu/haze-deadzonedeep
+	link "Deadzone One"
+	hazard "" 30
+	hazard "Deadzone Radiation" 3
+	object
+		sprite star/nova-old-core
+			scale 10
+			"frame rate" 24
+		distance 1000
+		period 100
+		offset 25
+	object
+		sprite star/coal-black-hole
+			scale 2
+			"frame rate" 20
+		distance 500
+		period 100
+		hazard "" 1
+	object "Layline Breach"
+		sprite planet/layline-rift
+			scale 3
+			"frame rate" 20
+		distance 6000
+	object "The Observer"
+		sprite planet/gas9-hot
+		distance 10000
+		period 566
+
+system Delia
+	music music/ambient/graveyard/gravespace
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/dyson1
+			scale 0.5
+		distance 160.21
+		period 36.643
+		offset 217.144
+	object
+		sprite planet/dyson2
+			scale 0.5
+		distance 160.21
+		period 36.643
+		offset 181.163
+	object
+		sprite planet/dyson3
+			scale 0.5
+		distance 160.21
+		period 36.643
+		offset 294.239
+	object
+		sprite planet/cloud3
+		distance 589.01
+		period 258.312
+	object
+		sprite planet/desert9-b
+		distance 748.5
+		period 370.04
+	object
+		sprite planet/gas11
+		distance 2258.66
+		period 1939.71
+		object
+			sprite planet/station3bd
+				scale 0.5
+			distance 255
+			period 13.43
+		object
+			sprite planet/luna
+			distance 367
+			period 23.189
+		object
+			sprite planet/rock7-b
+			distance 519
+			period 38.997
+	object
+		sprite planet/browndwarf-y
+		distance 4586
+		period 5611.94
+
+system "Deadzone One"
+	pos 394.709 298.828
+	government Deadzones
+	music music/combat/deadzone/deadzoneheavy
+	habitable 0
+	haze _menu/haze-deadzonelarge
+	link "Deadzone Four"
+	link Purferation
+	object
+		sprite star/g5-old
+			scale 3
+			"frame rate" 20
+		period 25
+	object DZ-041
+		sprite planet/rock0-b
+		distance 500
+		period 30
+
+system "Deadzone Two"
+	pos 335.597 316.014
+	government Deadzones
+	music music/combat/deadzone/deadzonelight
+	habitable 0
+	belt 0
+	haze _menu/haze-deadzoneedge
+	link Edusa
+	asteroids "large metal" 25 10
+	asteroids "medium rock" 100 0
+	hazard "Deadzone Radiation" 2
+	object
+		sprite star/neutron
+			scale 10
+		period 2
+		hazard "Neutron Star Magnetic Field" 1
+
+galaxy "label deadzones"
+	pos 500 500
+	sprite label/deadzone
+
+system "Deadzone Three"
+	pos 370.223 341.912
+	government Deadzones
+	music music/combat/deadzone/deadzoneheavy
+	habitable 0
+	haze _menu/haze-deadzonelarge
+	link "Deadzone Five"
+	object Deadworld
+		sprite planet/Craig
+		distance 2000
+		period 25
+	object
+		sprite star/k-supergiant
+			scale 3
+		hazard "Deadzone Radiation Feild" 1000
+	object
+		sprite star/carbon
+			scale 0.5
+		distance 12500
+		period 255
+	object
+		sprite planet/gas11
+			scale 3
+		distance 6500
+		period 83
+
+planet "Layline Breach"
+	attributes breach
+	spaceport ""
+	government Uninhabited
+	bribe 0
+	security 0
+
+system Hyperion
+	pos -188.667 4815.222
+	government Miri
+	attributes breach wormhole
+	habitable 0
+	belt 0
+	haze _menu/haze-deadzone
+	object "Layline Breach Hyperion"
+		sprite planet/layline-rift
+			scale 2
+		distance 32.557
+		period 0.25
+
+planet Deadworld
+	attributes uninhabited
+	description "This world is a dead lifeless rock, With no atmosphere or life to speak of"
+	government Deadzones
+	bribe 0
+	security 0
+
+planet DZ-041
+	attributes Uninhabited
+	description "This planet doesnt even have a name, just the catalouge code Paradox has given it."
+	government Deadzones
+	bribe 0
+	security 0
+
+planet Siteria
+	attributes "Quazar Worlds" Shipyard
+	description "An Earth-like planet, Siteria is notable for the large number of settlements on it: every few kilometers there are remains of sizable villages, some of which still haven't been completely covered by vegetation even today. A few cities even have tall buildings still partially held together, a testament to how durable the constructions of the planet's original inhabitants were. Paradox has recently taken this world into his stewardship as a Bulawrk Planet agianst the miri invasion. The space port lies just beyond the landing pads, and the massive shipyard complex rests behind that."
+	spaceport "You could hardly call this a full space PORT, more so a lounge"
+	government "Quazar Worlds"
+	security 0.8
+
+system Nona
+	pos 168.445 557.556
+	government "Quazar Worlds"
+	add attributes quazar
+	music music/ambient/graveyard/gravespace
+	add link Rubicon
+	remove trade
+	trade Electronics 1500
+	trade Equipment 500
+	trade "Heavy Metals" 1200
+	trade Industrial 1000
+	trade Metal 1250
+	trade Plastic 990
+	remove fleet
+	object
+		sprite star/g0
+		period 10
+	object
+		sprite planet/desert7
+		distance 166.29
+		period 26.1
+	object
+		sprite planet/desert5-b
+		distance 342.7
+		period 77.218
+	object Siteria
+		sprite planet/ocean0-b
+		distance 675.34
+		period 213.615
+		object
+			sprite planet/station3bd
+				scale 0.5
+			distance 174
+			period 23.914
+	object
+		sprite planet/gas4
+		distance 2149.35
+		period 1212.85
+		object
+			sprite planet/dust1
+			distance 270
+			period 15.647
+
+system Rubicon
+	pos 333.75 655.417
+	habitable 3255
+	belt 3500 75
+	belt 7500 25
+	haze _menu/haze-deadzoneedge
+	link "Deadzone Fifteen"
+	link "Deadzone Thirteen"
+	link Nona
+	minables silicon 125 0
+	minables aluminum 50 1
+	minables silver 150 3
+	minables iron 150 2
+	minables neodymium 25 4
+	object
+		sprite star/f5-old
+			scale 3.5
+		period 24
+		object
+			sprite star/k-dwarf
+				scale 5
+			distance 300
+			period 24
+	object Rampart
+		sprite planet/Verdant1
+		distance 2400
+		period 233
+		hazard "Deadzone Weakfeild" 1
+
+system Rutilicus
+	object
+		sprite star/g5
+		period 10
+	object
+		sprite planet/rock6
+		distance 158.61
+		period 31.961
+	object "New Boston"
+		sprite planet/cloud6
+		distance 525.206
+		period 186.374
+	object
+		sprite planet/rock13-b
+		distance 864.75
+		period 406.87
+	object
+		sprite planet/gas14
+		distance 1503.91
+		period 933.152
+		object
+			sprite planet/ice7-b
+			distance 249
+			period 15.137
+	object
+		sprite planet/gas16-b
+		distance 2597.32
+		period 2117.91
+		object
+			sprite planet/ganymede
+			distance 237
+			period 17.984
+		object
+			sprite planet/rock0
+			distance 356
+			period 33.108
+
+planet "The Observer"
+	government Deadzones
+
+system Sadalmelik
+	pos -144.704 472
+	object
+		sprite star/f5
+		period 10
+	object
+		sprite planet/callisto
+		distance 138.24
+		period 15.699
+	object
+		sprite planet/ganymede-b
+		distance 500.49
+		period 108.148
+	object
+		sprite planet/cloud4-b
+		distance 836.45
+		period 233.661
+	object Humanika
+		sprite planet/ocean7
+		distance 1298.94
+		period 452.18
+	object
+		sprite planet/uranus-b
+		distance 1947.35
+		period 830.03
+		object Grakhord
+			sprite planet/ice7
+			distance 253
+			period 16.235
+
+galaxy "Milky Way"
+	sprite "ui/milky waym"
+
+system Gerenus
+	music music/ambient/graveyard/gravespace
+	object
+		sprite star/k-giant
+		period 10
+	object
+		sprite planet/gas4-hot
+		distance 390.558
+		period 56.367
+	object Palarei
+		sprite planet/rock10-b
+		distance 818.048
+		period 170.87
+	object
+		sprite planet/mars
+		distance 1473.94
+		period 413.255
+	object
+		sprite planet/ice5-b
+		distance 1726.94
+		period 524.101
+	object
+		sprite planet/gas9
+		distance 2593.94
+		period 964.804
+		object
+			sprite planet/io
+			distance 269
+			period 15.561
+
+system Esix
+	music music/ambient/graveyard/gravespace
+	object
+		sprite star/b5
+		period 10
+	object
+		sprite planet/desert7-b
+		distance 245.01
+		period 20.499
+	object
+		sprite planet/dust5-b
+		distance 593.57
+		period 77.299
+	object
+		sprite planet/gas5
+		distance 945.38
+		period 155.373
+	object
+		sprite planet/gas3
+		distance 2694.88
+		period 747.782
+		object
+			sprite planet/ice0-b
+			distance 270
+			period 11.332
+		object
+			sprite planet/rock3
+			distance 372
+			period 18.326
+	object "Graveyard Wormhole (Unstable)"
+		sprite planet/wormhole-red
+		distance 3618.74
+		period 1163.59
+
+system Queri
+	music music/ambient/graveyard/gravespace
+
+system Paeli
+	music music/ambient/graveyard/gravespace
+
+system Polerius
+	music music/ambient/graveyard/gravespace
+	object
+		sprite star/g0
+		distance 64.04
+		period 14.212
+		offset 180
+	object
+		sprite star/k5-old
+		distance 72.803
+		period 14.212
+	object
+		sprite planet/lava7
+		distance 270
+		period 39.387
+	object
+		sprite planet/rock19-b
+		distance 694
+		period 162.312
+	object Celeatis
+		sprite planet/rock10-b
+		distance 1141.15
+		period 342.236
+	object "Ember Graveyard"
+		sprite planet/wormhole-red
+		distance 1824.15
+		period 691.676
+	object
+		sprite planet/gas14-b
+		distance 2448.24
+		period 1075.45
+		object Ceilia'sei
+			sprite planet/station3b
+				scale 0.5
+			distance 253
+			period 14.316
+		object
+			sprite planet/station3bd
+				scale 0.5
+			distance 403
+			period 28.78
+
+system Ritilas
+	music music/ambient/graveyard/gravespace
+	object
+		sprite star/k0-old
+		period 10
+	object
+		sprite planet/rock14
+		distance 155
+		period 24.657
+	object
+		sprite planet/gas0
+		distance 690
+		period 231.59
+		object
+			sprite planet/callisto
+			distance 301
+			period 15.304
+		object
+			sprite planet/rock17
+			distance 414
+			period 24.686
+	object
+		sprite planet/rock7
+		distance 1230
+		period 551.194
+	object "Graveyard Wormhole (Stable)"
+		sprite planet/wormhole
+		distance 1666
+		period 868.879
+	object
+		sprite planet/gas6
+		distance 2320
+		period 1427.83
+	object
+		sprite planet/gas9
+		distance 4065
+		period 3311.59
+		object
+			sprite planet/lava0
+			distance 234
+			period 13.422
+		object
+			sprite planet/oberon
+			distance 365
+			period 26.148
+
+system Relifer
+	music music/ambient/graveyard/gravespace
+	object
+		sprite star/k0-old
+		period 10
+	object
+		sprite planet/mercury
+		distance 167.69
+		period 27.746
+	object
+		sprite planet/cloud0-b
+		distance 467.7
+		period 129.24
+		object
+			sprite planet/dust7-b
+			distance 134
+			period 17.373
+	object
+		sprite planet/ice3
+		distance 781.79
+		period 279.307
+	object
+		sprite planet/water1
+		distance 1126.04
+		period 482.811
+	object
+		sprite planet/ice1
+		distance 1804.04
+		period 979.075
+	object
+		sprite planet/gas11-b
+		distance 2539.85
+		period 1635.53
+		object
+			sprite planet/tethys-b
+			distance 221
+			period 13.38
+		object
+			sprite planet/europa
+			distance 349
+			period 26.552
+		object
+			sprite planet/callisto
+			distance 459
+			period 40.048
+	object "Graveyard Wormhole (Unstable)"
+		sprite planet/wormhole-red
+		distance 3462.04
+		period 2602.82
+
+system Feraticus
+	music music/ambient/graveyard/gravespace
+
+system Giribea
+	music music/ambient/graveyard/gravespace
+	object
+		sprite star/g5-old
+		distance 35.486
+		period 11.8
+		offset 180
+	object
+		sprite star/g8
+		distance 80.649
+		period 11.8
+	object
+		sprite planet/lava0
+		distance 217.769
+		period 30.298
+	object Osaeli
+		sprite planet/forest0-b
+		distance 662.609
+		period 160.808
+	object Seli'het
+		sprite planet/station1b
+			scale 0.5
+		distance 950.019
+		period 276.071
+	object
+		sprite planet/gas9-b
+		distance 1952.66
+		period 813.511
+		object
+			sprite planet/dust4-b
+			distance 268
+			period 16.451
+		object
+			sprite planet/io-b
+			distance 395
+			period 29.437
+		object
+			sprite planet/ice0
+			distance 553
+			period 48.762
+
+system Fereti
+	music music/ambient/graveyard/gravespace
+	object
+		sprite star/a5
+		period 10
+	object
+		sprite planet/lava7
+		distance 152.36
+		period 13.298
+	object
+		sprite planet/desert5
+		distance 521.2
+		period 84.138
+		object
+			sprite planet/dust3-b
+			distance 161
+			period 25.68
+	object Parii'het
+		sprite planet/station2b
+			scale 0.5
+		distance 1687.04
+		period 489.974
+	object
+		sprite planet/gas2
+		distance 2166.29
+		period 712.951
+		object Alix
+			sprite planet/luna-b
+			distance 203
+			period 17.525
+
+system Lire
+	music music/ambient/graveyard/gravespace
+	object
+		sprite star/g0
+		period 10
+	object
+		sprite planet/dust2
+		distance 180.81
+		period 29.593
+	object
+		sprite planet/desert2-b
+		distance 676.17
+		period 214.008
+		object
+			sprite planet/rock0-b
+			distance 135
+			period 20.119
+	object
+		sprite planet/ice1
+		distance 1019.41
+		period 396.16
+	object Retilie
+		sprite planet/water1
+		distance 1361.41
+		period 611.408
+	object
+		sprite planet/browndwarf-l
+		distance 2307.37
+		period 1349.03
+		object
+			sprite planet/miranda-b
+			distance 300
+			period 27
+		object
+			sprite planet/rock3
+			distance 425
+			period 36
+
+system Dixere
+	music music/ambient/graveyard/gravespace
+	object
+		sprite star/k0-old
+		period 10
+	object
+		sprite planet/lava1
+		distance 269.69
+		period 56.591
+	object Veliante
+		sprite planet/lava4
+		distance 967.18
+		period 384.333
+	object
+		sprite planet/desert2-b
+		distance 1204.67
+		period 534.255
+	object
+		sprite planet/desert8
+		distance 1515.76
+		period 754.036
+	object
+		sprite planet/gas8
+		distance 2232.25
+		period 1347.6
+		object
+			sprite planet/luna
+			distance 186
+			period 13.504
+		object
+			sprite planet/ice0
+			distance 275
+			period 24.276
+		object
+			sprite planet/dust1
+			distance 430
+			period 47.466
+		object
+			sprite planet/ice8
+			distance 555
+			period 69.601
+
+system Saquergen
+
+system Orbona
+	object
+		sprite star/b-giant
+		distance 3.84
+		period 6.519
+	object
+		sprite star/k0
+		distance 180.249
+		period 6.519
+		offset 180
+	object
+		sprite planet/ice6
+		distance 447.836
+		period 34.839
+		object
+			sprite planet/desert4
+			distance 149
+			period 22.864
+	object
+		sprite planet/desert3-b
+		distance 862.846
+		period 93.172
+	object
+		sprite planet/desert2
+		distance 1210.49
+		period 154.819
+		object
+			sprite planet/rock3-b
+			distance 175
+			period 19.786
+	object
+		sprite planet/dust2
+		distance 1594.3
+		period 234.012
+	object
+		sprite planet/gas4-b
+		distance 2057.86
+		period 343.168
+		object
+			sprite planet/dust1
+			distance 262.279
+			period 15.909
+
+system "Omicron Delta"
+	pos -237.833 -1231.583
+	government Miri
+	music music/combat/miri/mirilight
+	arrival 10000
+	habitable 0
+	belt 0
+	haze _menu/haze-exotic
+
+system Wezen
+	add link Tau-54
+	object
+		sprite star/f0
+		distance 5.892
+		period 8.439
+	object
+		sprite star/g-dwarf
+		distance 100.554
+		period 8.439
+		offset 180
+	object
+		sprite planet/miranda-b
+		distance 255.401
+		period 31.362
+	object
+		sprite planet/gas5-b
+		distance 664.041
+		period 131.482
+		object "Phoenix Station"
+			sprite planet/station1
+				scale 0.5
+			distance 257
+			period 12.354
+	object
+		sprite planet/water0-b
+		distance 1273.29
+		period 349.113
+	object Alfheim
+		sprite planet/forest0
+		distance 1768.53
+		period 571.47
+		object
+			sprite planet/ice0-b
+			distance 181
+			period 19.883
+	object
+		sprite planet/gas9-b
+		distance 3579.78
+		period 1645.73
+		object
+			sprite planet/rock0
+			distance 220
+			period 11.509
+		object
+			sprite planet/rock14-b
+			distance 374
+			period 25.51
+		object
+			sprite planet/tethys
+			distance 496
+			period 38.96
+
+system "Deep Space 19M1"
+	haze _menu/haze-edge
+	object
+		sprite star/g-giant
+		period 10
+	object
+		sprite planet/gas0-b
+		distance 1549.84
+		period 383.497
+		object
+			sprite planet/dust1-b
+			distance 253
+			period 11.793
+		object
+			sprite planet/miranda
+			distance 340
+			period 18.373
+		object
+			sprite planet/rock14
+			distance 464
+			period 29.291
+	object
+		sprite planet/gas16
+		distance 2193.3
+		period 645.623
+	object
+		sprite planet/gas13-b
+		distance 3145.85
+		period 1109.02
+	object
+		sprite planet/gas3-b
+		distance 8021.02
+		period 4515.19
+		object
+			sprite planet/rock7-b
+			distance 294
+			period 12.876
+		object
+			sprite planet/ice7
+			distance 390
+			period 19.673
+		object
+			sprite planet/rock17-b
+			distance 492
+			period 27.875
+
+system "Deep Space 19M2"
+	haze _menu/haze-edge
+	object
+		sprite star/f5-old
+		period 10
+	object
+		sprite planet/gas1
+		distance 1169.47
+		period 273.147
+	object
+		sprite planet/gas15-b
+		distance 3139.51
+		period 1201.45
+		object
+			sprite planet/lava2-b
+			distance 241
+			period 18.441
+		object
+			sprite planet/dust0-b
+			distance 366
+			period 34.513
+		object
+			sprite planet/ganymede-b
+			distance 471
+			period 50.384
+		object
+			sprite planet/dust5-b
+			distance 577
+			period 68.317
+
+system "Deep Space 5J"
+	haze _menu/haze-edge
+	object
+		sprite star/f5
+		period 10
+	object
+		sprite planet/gas11-b
+		distance 1449.31
+		period 532.929
+		object
+			sprite planet/rock7-b
+			distance 235
+			period 11.882
+		object
+			sprite planet/ice0-b
+			distance 332
+			period 19.952
+		object
+			sprite planet/rock3-b
+			distance 438
+			period 30.234
+	object
+		sprite planet/gas8-b
+		distance 3382.55
+		period 1900.17
+		object
+			sprite planet/rhea
+			distance 230
+			period 18.568
+		object
+			sprite planet/dust3
+			distance 335
+			period 32.639
+		object
+			sprite planet/ice0
+			distance 490
+			period 57.739
+
+system "Deep Space 1X"
+	pos -937.333 -695.333
+	haze _menu/haze-edgedense
+
+system "Deep Space 1Q"
+	haze _menu/haze-edge
+	object
+		sprite star/a0
+		period 10
+	object
+		sprite planet/gas15
+		distance 1673.12
+		period 453.11
+		object
+			sprite planet/rock14-b
+			distance 231
+			period 17.305
+		object
+			sprite planet/desert4-b
+			distance 367
+			period 34.655
+		object
+			sprite planet/ice8-b
+			distance 467
+			period 49.744
+		object
+			sprite planet/dust2
+			distance 575
+			period 67.962
+	object
+		sprite planet/gas3-b
+		distance 3916.97
+		period 1623.07
+		object
+			sprite planet/rhea
+			distance 274
+			period 11.585
+		object
+			sprite planet/dust3
+			distance 429
+			period 22.696
+		object
+			sprite planet/dust5-b
+			distance 540
+			period 32.052
+
+system "Deep Space 5T"
+	haze _menu/haze-edge
+	object
+		sprite star/m0
+		period 10
+	object
+		sprite planet/gas14-b
+		distance 1034.31
+		period 743.808
+	object
+		sprite planet/gas12
+		distance 2339.35
+		period 2530.04
+		object
+			sprite planet/europa-b
+			distance 276
+			period 12.043
+		object
+			sprite planet/rock14
+			distance 419
+			period 22.527
+		object
+			sprite planet/dust7
+			distance 536
+			period 32.594
+
+system "Deep Space 5N"
+	haze _menu/haze-edge
+	object
+		sprite star/k0-old
+		period 10
+	object
+		sprite planet/gas1-b
+		distance 536.616
+		period 158.833
+		object
+			sprite planet/ice8
+			distance 223
+			period 13.31
+		object
+			sprite planet/dust0-b
+			distance 310
+			period 21.815
+	object
+		sprite planet/gas14
+		distance 2557.67
+		period 1652.77
+
+system Devil-Hide
+	haze _menu/haze-edge
+	object Devil-Eye
+		sprite planet/rogue-radiating
+		object Elenchus
+			sprite "planet/asteroid base"
+			distance 251
+			period 18.579
+
+system Tau-45
+	pos -747 -876
+	government Uninhabited
+	belt 0
+	haze _menu/haze-omitau
+
+system Es'sprak'ai
+	music music/ambient/omitau/omispace
+	haze _menu/haze-edge
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/cloud4-b
+		distance 168.84
+		period 39.644
+	object "Vara Rakak"
+		sprite planet/cloud6
+		distance 498.48
+		period 201.109
+		object
+			sprite planet/tethys-b
+			distance 127
+			period 14.652
+	object
+		sprite planet/rock4-b
+		distance 1009.57
+		period 579.651
+		object
+			sprite planet/rhea-b
+			distance 157
+			period 17.909
+	object
+		sprite planet/gas5-b
+		distance 2576.18
+		period 2362.79
+		object
+			sprite planet/miranda
+			distance 266
+			period 14.427
+
+system Sko'karak
+	music music/ambient/omitau/omispace
+	haze _menu/haze-edgedense
+	object
+		sprite star/m0
+		period 10
+	object
+		sprite planet/rock8
+		distance 154.36
+		period 42.883
+	object
+		sprite planet/rock18
+		distance 384.05
+		period 168.293
+	object
+		sprite planet/desert1
+		distance 617.3
+		period 342.948
+	object
+		sprite planet/gas4
+		distance 1227.46
+		period 961.603
+		object
+			sprite planet/callisto-b
+			distance 272
+			period 15.822
+		object
+			sprite planet/rock3-b
+			distance 406
+			period 28.853
+
+system Ka'pru
+	music music/ambient/omitau/omispace
+	haze _menu/haze-edgedense
+	object
+		sprite star/g0
+		distance 26.15
+		period 9.188
+	object
+		sprite star/k5
+		distance 66.452
+		period 9.188
+		offset 180
+	object
+		sprite planet/gas6-hot
+		distance 261.426
+		period 43.583
+	object
+		sprite planet/desert0
+		distance 510.986
+		period 119.098
+	object
+		sprite planet/lava1
+		distance 785.026
+		period 226.786
+	object "Vara Ke'stai"
+		sprite planet/forest0
+		distance 1178.24
+		period 417.006
+	object
+		sprite planet/gas11
+		distance 2026.49
+		period 940.607
+		object
+			sprite planet/dust4
+			distance 260
+			period 13.827
+		object
+			sprite planet/rhea
+			distance 381
+			period 24.528
+		object
+			sprite planet/rock3-b
+			distance 508
+			period 37.764
+
+system Ka'ch'chrai
+	music music/ambient/omitau/omispace
+	haze _menu/haze-edge
+	object
+		sprite star/k5
+		period 10
+	object
+		sprite planet/europa
+		distance 191.36
+		period 51.362
+	object "Vara K'chrai"
+		sprite planet/earth
+		distance 458.36
+		period 190.403
+	object
+		sprite planet/ocean5-b
+		distance 718.97
+		period 374.051
+	object
+		sprite planet/ice5-b
+		distance 1280.61
+		period 889.182
+		object
+			sprite planet/rock7-b
+			distance 153
+			period 18.718
+	object
+		sprite planet/gas13
+		distance 3482.61
+		period 3987.7
+
+system Kiro'ku
+	music music/ambient/omitau/omispace
+	haze _menu/haze-edge
+	object
+		sprite star/g5
+		distance 45.45
+		period 12.599
+		offset 180
+	object
+		sprite star/k0
+		distance 57.972
+		period 12.599
+	object
+		sprite planet/ice4
+		distance 228.654
+		period 41.418
+	object
+		sprite planet/rock10-b
+		distance 664.814
+		period 205.339
+	object "Var' Kar'i'i"
+		sprite planet/forest1-b
+		distance 948.574
+		period 349.968
+	object
+		sprite planet/desert5
+		distance 1482.38
+		period 683.694
+		object
+			sprite planet/rock0-b
+			distance 167
+			period 23.731
+	object
+		sprite planet/gas10-b
+		distance 2974.99
+		period 1943.79
+		object
+			sprite planet/luna
+			distance 226
+			period 17.884
+		object
+			sprite planet/io-b
+			distance 333
+			period 31.986
+		object
+			sprite planet/dust3-b
+			distance 478
+			period 55.01
+
+system "Pug Iyik"
+	music music/ambient/omitau/omispace
+	object
+		sprite star/g5
+		period 10
+	object
+		sprite planet/rock6-b
+		distance 268.89
+		period 70.547
+		object
+			sprite planet/europa
+			distance 160
+			period 25.442
+	object "Vara Pug"
+		sprite planet/ocean4
+		distance 643.85
+		period 261.394
+	object
+		sprite planet/lava3-b
+		distance 1271.1
+		period 725.086
+	object
+		sprite planet/gas15
+		distance 2701.19
+		period 2246.22
+		object
+			sprite planet/dust5
+			distance 234
+			period 18.842
+		object
+			sprite planet/desert4
+			distance 365
+			period 36.706
+
+system Tau-54
+	pos -688.833 -826.25
+	government Uninhabited
+	music music/ambient/omitau/tauspace
+	haze _menu/haze-omitau
+	link "Omicron Gamma"
+	link Wezen
+
+system "Omicron Theta"
+	pos -123.667 -1050.333
+	government Miri
+	music music/combat/omitau/omilight
+	habitable 2500
+	belt 0
+	haze _menu/haze-omicronlight
+	link "Omicron Alpha"
+	link "Omicron Beta"
+	link "Omicron Gamma"
+	object
+		sprite planet/gas0
+			scale 3
+	object
+		sprite planet/Omicronice1
+		distance 5000
+		period 322
+	object
+		sprite planet/ice2
+			scale 2
+		distance 2500
+		period 145
+
+system "Deadzone Four"
+	pos 424.417 351.25
+	government Deadzones
+	music music/combat/deadzone/deadzoneheavy
+	arrival 6000
+	habitable 7500
+	belt 0
+	haze _menu/haze-deadzone
+	link "Deadzone Five"
+	link "Deadzone One"
+	hazard "Deadzone Weakfeild" 5000
+	object
+		sprite star/carbon-core
+			scale 4
+		period 4
+	object
+		sprite planet/lava1-b
+		distance 1000
+		period 56
+	object
+		sprite planet/lava7-b
+			scale 2
+		distance 3000
+		period 233
+	object Sunderland
+		sprite planet/sunder1
+		distance 4500
+		period 344
+	object
+		sprite planet/gas10-hot
+			scale 2
+		distance 7000
+		period 588
+	object
+		sprite star/carbon
+			scale 10
+		period 977
+
+planet Rampart
+	attributes quazar
+	description "Rampart, The Deadzones Bulwark Wolrd. The planet itself is remarkably earthlie, despite being in the atrological equivilant of hell, with lush verdant forests covering most of its surface and a mountianous equator region. Paradox has taken great care to keep Rampart as pristine as possible, with treeing being planted religously around the entire shipyard complex and the launch bays being thoughly buried under ground to avoid scorting pines and oaks."
+	spaceport "While the landing pads are simple, the space port is anything but; It has acomodations for just about every race within the Quazar Alliance. The space port hosts a number of trade platforms, living quarters and Plazas, all within a three story building. Paradox has a open office on the first floor where requests and conversations can be made."
+	government "Quazar Worlds"
+	bribe 0
+	security 0.75
+
+system "Omicron Alpha"
+	pos 19.667 -1171.667
+	government "Quazar Worlds"
+	music music/ambient/omitau/omispace
+	habitable 5000
+	belt 0
+	haze _menu/haze-omicron
+	link "Omicron Beta"
+	link "Omicron Theta"
+	link Tau-37
+	object
+		sprite star/OmicronBstar
+		distance 250
+		period 45
+		object
+			sprite star/a-giant
+			distance 250
+			period 33
+	object
+		sprite planet/cloud0
+		distance 1500
+		period 133
+	object
+		sprite planet/Craig
+		distance 2400
+		period 224
+	object
+		sprite planet/gas14
+			scale 2
+		distance 5500
+		period 477
+		object
+			sprite planet/cloud7
+			distance 750
+			period 199
+		object
+			sprite planet/cloud4-b
+			distance 500
+			period 133
+
+planet "Planet Crete"
+	landscape land/desert15
+	music music/ambient/omitau/omispace
+	government Uninhabited
+
+system "Omicron Gamma"
+	pos -273.667 -1001.667
+	government Corsairs
+	music music/ambient/omitau/omispace
+	arrival 5000
+	habitable 5000
+	belt 12500
+	haze _menu/haze-gamma
+	link "Omicron Kappa"
+	link "Omicron Theta"
+	link Tau-54
+	object
+		sprite star/k-supergiant
+			scale 2
+		period 5
+	object
+		sprite planet/desert1
+		distance 1500
+		period 66
+	object "Planet Crete"
+		sprite planet/Omicrondesert1
+		distance 3500
+		period 344
+		object
+			sprite planet/Omicronice1
+				scale 0.4
+			distance 500
+			period 133
+
+system "Omicron Beta"
+	pos -92.741 -1130.074
+	government Uninhabited
+	music music/ambient/omitau/omispace
+	link "Omicron Alpha"
+	link "Omicron Kappa"
+	link "Omicron Theta"
+
+planet "Planet Kurlile"
+	music music/ambient/omitau/omispace
+	description "Kurlile,one of only a handful of habitible planets within the Omicrong sector. While it may not have lush forests, or Beautiful tropics, it has plenty of rolling grasslands, deaserts, and mountians. The wildlife here is sparse being mostly insects and the odd rodent, likely having to do with the wild seasons, however there are alot of strange flowers, some growing the height of small trees. Paradox has designated Kurlile as a potential bulwark world, but its mostly used to serve as a rest point to the Pirates and Hai as they make their way to the deeper omicrons."
+	spaceport "The space port is simple, but acomodating. A lounge with a connected bar sits in the middle with permanant and temporary living quarters branching out in a hexagonal manner."
+	government "Quazar Worlds"
+	bribe 0.03
+	security 0.3
+
+planet Sunderland
+	attributes sundered
+	landscape land/lava9
+	music music/ambient/deadzone/deadzonespace
+	description "Sunderland was once a Bulwark Planet of lush orange feilds and amber trees. Whats left is a reminder of the Miri's assult and the ends that Paradox will go to fending them off. Landing here is a mistake and you can already see your ships hull begining to take a hit, its best to leave now before you melt from the heat of molten tungsten."
+	government Deadzones
+	bribe 0
+	security 0
+
+system "Deadzone Five"
+	pos 377.555 422.889
+	government Deadzones
+	music music/combat/deadzone/deadzoneheavy
+	habitable 3000
+	belt 0
+	haze _menu/haze-deadzonelarge
+	link "Deadzone Four"
+	link "Deadzone Seven"
+	link "Deadzone Ten"
+	link "Deadzone Three"
+	asteroids "medium rock" 10 2
+	hazard "Deadzone Weakfeild" 1
+	object
+		sprite star/k5-old
+			scale 3
+	object
+		sprite planet/Craig
+			scale 0.5
+		distance 1500
+		period 95
+	object
+		sprite planet/dust0
+			scale 2
+		distance 3500
+		period 322
+
+system "Deadzone Six"
+	pos 505.779 306.889
+	government Deadzones
+	music music/combat/deadzone/deadzoneheavy
+	habitable 0
+	belt 0
+	haze _menu/haze-deadzonedeep
+	link "Deadzone Nine"
+	asteroids "large rock" 250 1
+	asteroids "small rock" 125 3
+	hazard "Deadzone Radiation Feild" 2500
+	object
+		sprite star/nova
+			scale 5
+		period 255
+	object
+		sprite star/carbon
+			scale 5
+		period 127
+
+system "Deadzone Seven"
+	pos 461.333 447.333
+	government Deadzones
+	music music/combat/deadzone/deadzoneheavy
+	habitable 5000
+	haze _menu/haze-deadzonelarge
+	link "Deadzone Eight"
+	link "Deadzone Five"
+	link "Deadzone Nine"
+	hazard "Deadzone Weakfeild" 25000
+	object
+		sprite star/small-black-hole
+		hazard "Small Black Hole Event Horizon" 1
+	object
+		sprite planet/lava3-b
+		distance 3250
+		period 355
+
+system "Deadzone Eight"
+	pos 464.222 494.222
+	government Deadzones
+	music music/combat/deadzone/deadzonelight
+	link "Deadzone Seven"
+	link "Deadzone Ten"
+	link "Deadzone Thirteen"
+
+system "Deadzone Nine"
+	pos 584.889 338.222
+	government Deadzones
+	music music/combat/deadzone/deadzoneheavy
+	link "Deadzone Eleven"
+	link "Deadzone Seven"
+	link "Deadzone Six"
+	link "Deadzone Twelve"
+
+system "Deadzone Ten"
+	pos 384.667 519.333
+	government Deadzones
+	music music/combat/deadzone/deadzonelight
+	link "Deadzone Eight"
+	link "Deadzone Five"
+	link "Deadzone Thirteen"
+
+system "Deadzone Fifteen"
+	pos 481.333 615.778
+	government Deadzones
+	music music/combat/deadzone/deadzonelight
+	haze _menu/haze-deadzoneedge
+	link "Deadzone Fourteen"
+	link Rubicon
+
+system "Deadzone Eleven"
+	pos 646.444 362
+	government Deadzones
+	music music/combat/deadzone/deadzonelight
+	link "Deadzone Nine"
+	link "Deadzone Twelve"
+
+system "Deadzone Twelve"
+	pos 561.556 469.778
+	government Deadzones
+	music music/combat/deadzone/deadzoneheavy
+	link "Deadzone Eleven"
+	link "Deadzone Fourteen"
+	link "Deadzone Nine"
+
+system "Deadzone Thirteen"
+	pos 392.222 594.889
+	government Deadzones
+	music music/combat/deadzone/deadzonelight
+	link "Deadzone Eight"
+	link "Deadzone Fourteen"
+	link "Deadzone Ten"
+	link Rubicon
+
+system "Deadzone Fourteen"
+	pos 506.889 552.889
+	government Deadzones
+	music music/combat/deadzone/deadzoneheavy
+	link "Deadzone Fifteen"
+	link "Deadzone Thirteen"
+	link "Deadzone Twelve"
+
+system Draconis
+	pos 1039 -1001.5
+	government "Quazar Worlds"
+	music music/ambient/omitau/quazarspace
+	habitable 3250
+	belt 1625
+	haze _menu/haze-skyclear
+	link Tau-2
+	minables titanium 75 2
+	object
+		sprite star/g3
+			scale 3
+		distance 100
+		period 34
+	object
+		sprite star/a-dwarf
+			scale 5
+		distance 100
+		period 34
+		offset 174
+	object
+		sprite planet/citidelbase
+		distance 3455
+		period 355
+	object
+		sprite planet/gas11-b
+			scale 3
+		distance 7233
+		period 755
+		object
+			sprite planet/ice0-b
+				scale 2
+			distance 1245.288
+			period 622
+		object
+			sprite planet/Omicronice1
+			distance 777
+			period 455
+
+system Tau-37
+	pos 140 -1255.75
+	government Uninhabited
+	music music/ambient/omitau/tauspace
+	haze _menu/haze-omitau
+	link "Omicron Alpha"
+	link Tau-23
+
+system Tau-29
+	pos 235 -1242.75
+	government "Zoner Outlander"
+	music music/ambient/omitau/tauspace
+	haze _menu/haze-omitauedge
+	link Tau-23
+	link Tau-31
+
+system Tau-23
+	pos 231 -1326.75
+	government Uninhabited
+	music music/ambient/omitau/tauspace
+	haze _menu/haze-skyclear
+	link Tau-29
+	link Tau-31
+	link Tau-37
+
+system Tau-31
+	pos 317 -1298.75
+	government Uninhabited
+	music music/ambient/omitau/tauspace
+	haze _menu/haze-skyclear
+	link Tau-23
+	link Tau-29
+	link Vestibule
+
+system "Deep Space 19K12"
+	haze _menu/haze-edge
+
+system Hive
+	pos -5243.167 -824
+	government Miri
+	music music/combat/miri/miriheavy
+	habitable 0
+
+system Edusa
+	add link "Deadzone Two"
+	object
+		sprite star/g-giant
+		period 10
+	object
+		sprite planet/ice4
+		distance 360.187
+		period 42.966
+	object
+		sprite planet/desert10-b
+		distance 572.397
+		period 86.075
+	object
+		sprite planet/rock19-b
+		distance 829.397
+		period 150.133
+	object
+		sprite planet/dust4
+		distance 1130.29
+		period 238.845
+	object "Remnant Wormhole"
+		sprite planet/wormhole-red
+		distance 3613.73
+		period 1365.41
+
+system "Omicron Psi"
+	pos -220.667 -1307
+	government Miri
+	haze _menu/haze-nomad
+
+system "Omicron Iota"
+	pos -206.667 -1364.069
+	government Miri
+
+system Tau-25
+	pos 540.5 -1390.5
+	government Uninhabited
+	haze _menu/haze-barrierlight
+
+planet "Quazar Citidel"
+	attributes requires:LOCKED
+	government Uninhabited
+	"required reputation" 1
+	bribe 0
+	security 1
+
+system Tau-3
+	pos 1176.5 -1047.25
+	government Uninhabited
+	music music/ambient/omitau/tauspace
+	habitable 2350
+	belt 4000 9
+	belt 1000
+	haze _menu/haze-skystrato
+	link Tau-2
+	object
+		sprite star/f0
+			scale 2
+	object
+		sprite planet/ocean6
+		distance 2250
+		period 225
+
+planet Zenith
+
+system Tau-2
+	pos 1053.611 -1051.417
+	government "Quazar Worlds"
+	music music/ambient/omitau/quazarspace
+	belt 1500
+	belt 2500 3
+	belt 4000
+	haze _menu/haze-skyclear
+	link Draconis
+	link Tau-3
+	asteroids "medium rock" 1000 1
+	minables uranium 200 1
+	minables silver 450 2.3
+	minables aluminum 1 1
+
+system Nucleus
+	pos 978.833 -1089.694
+	government "Quazar Worlds"
+	music music/combat/omitau/quazarlight
+	haze _menu/haze-skyclear
+	link Prime
+	link Senescence
+
+system "Omicron Kappa"
+	pos -193.37 -1124.907
+	government Uninhabited
+	music music/ambient/omitau/omispace
+	haze _menu/haze-edge
+	link "Omicron Beta"
+	link "Omicron Gamma"
+
+system Magellen
+	pos 845.25 -1064
+	government "Quazar Worlds"
+	music music/ambient/omitau/quazarspace
+	habitable 10
+	haze _menu/haze-barrieredge
+	link Prime
+	link Senescence
+	link Tau-6
+	link Tau-8
+	asteroids silver 250 3
+	asteroids "large metal" 100 1
+
+system Tau-6
+	pos 770.75 -1035
+	government "Quazar Worlds"
+	music music/ambient/omitau/tauspace
+	haze _menu/haze-barrierlight
+	link Magellen
+	link Tau-10
+	link Tau-7
+
+system Tau-7
+	pos 718.667 -1048.333
+	government Uninhabited
+	link Tau-10
+	link Tau-6
+
+system Tau-10
+	pos 751.667 -996.667
+	government Uninhabited
+	haze _menu/haze-barrierlight
+	link Tau-6
+	link Tau-7
+
+system Tau-8
+	pos 773.889 -1093.111
+	government "Quazar Worlds"
+	music music/ambient/omitau/quazarspace
+	haze _menu/haze-barrierlight
+	link Lux
+	link Magellen
+	link Vestibule
+
+system Lux
+	pos 722.777 -1084
+	music music/ambient/omitau/quazarspace
+	habitable 3500
+	haze _menu/haze-barrierdeep
+	link Tau-8
+	link Vestibule
+	asteroids "small rock" 100 1
+	object
+		sprite star/a5
+			scale 7.5
+	object
+		sprite planet/Sentinel1
+		distance 12500
+		period 745
+	object
+		sprite planet/gas1
+			scale 4
+		distance 7500
+		period 455
+		object
+			sprite planet/rock12
+				scale 1.5
+			distance 1500
+			period 250
+
+system X-3043
+	pos 1853.208 132.889
+	government Author
+	haze _menu/haze-nomad
+	object
+		sprite star/OmicronBstar
+	object
+		sprite planet/Craig
+		distance 500
+		period 1
+	object
+		sprite planet/Omicrondesert1
+		distance 1000
+		period 2
+	object
+		sprite planet/Omicronice1
+		distance 1500
+		period 3
+	object
+		sprite planet/Verdant1
+		distance 2000
+		period 4
+	object
+		sprite planet/bulwark1
+		distance 2500
+		period 5
+	object
+		sprite planet/bulwarkcitidel
+		distance 3000
+		period 6
+	object
+		sprite planet/citidelbase
+		distance 3500
+		period 7
+	object
+		sprite planet/glass1
+		distance 4000
+		period 8
+	object
+		sprite planet/protocitidel
+		distance 4500
+		period 9
+	object
+		sprite planet/rocky1
+		distance 5000
+		period 10
+	object
+		sprite planet/skyhell/skyhell
+		distance 5500
+		period 11
+
+system Vestibule
+	pos 725.111 -1132.667
+	government "Quazar Worlds"
+	music music/ambient/omitau/quazarspace
+	haze _menu/haze-barrieredge
+	link Lux
+	link Tau-31
+	link Tau-8
+
+system Prime
+	pos 910.889 -1078.296
+	government "Quazar Worlds"
+	music music/ambient/omitau/quazarspace
+	haze _menu/haze-skyclear
+	link Magellen
+	link Nucleus
+
+system Senescence
+	pos 912.889 -1019.63
+	government "Quazar Worlds"
+	music music/ambient/omitau/quazarspace
+	haze _menu/haze-skystrato
+	link Magellen
+	link Nucleus
+
+system Suhail
+	pos -764 -333
+	object
+		sprite star/k-giant
+		period 10
+	object
+		sprite planet/water1
+		distance 1193.41
+		period 301.081
+	object
+		sprite planet/io-b
+		distance 1461.7
+		period 408.118
+	object
+		sprite planet/gas14-b
+		distance 2034.31
+		period 670.077
+		object "Leviathan Station"
+			sprite planet/station6
+				scale 0.5
+			distance 252
+			period 15.411
+	object Helheim
+		sprite planet/ocean9
+		distance 2842.75
+		period 1106.89
+		object
+			sprite planet/europa
+			distance 166
+			period 20.453
+
+system Sol
+	object
+		sprite star/g0
+		period 10
+	object
+		sprite planet/mercury
+		distance 289.647
+		period 60
+	object
+		sprite planet/venus
+		distance 533.534
+		period 150
+	object Earth
+		sprite planet/earth
+		distance 965.669
+		period 365.25
+		object Luna
+			sprite planet/luna
+			distance 201.24
+			period 27.3
+	object Mars
+		sprite planet/mars
+		distance 1471.43
+		period 687.001
+	object Jupiter
+		sprite planet/jupiter
+		distance 3393.393
+		period 2348.4
+		object
+			sprite planet/io
+			distance 238.221
+			period 10.614
+		object
+			sprite planet/europa
+			distance 379.078
+			period 21.306
+		object
+			sprite planet/ganymede
+			distance 604.739
+			period 42.93
+		object
+			sprite planet/callisto
+			distance 811.717
+			period 66.76
+	object
+		sprite planet/saturn
+		distance 5562
+		period 5048.87
+		object
+			sprite planet/tethys
+			distance 590
+			period 1.9
+		object
+			sprite planet/rhea
+			distance 791
+			period 4.5
+		object
+			sprite planet/titan
+			distance 1222
+			period 16
+	object
+		sprite planet/uranus
+		distance 10373
+		period 12858.9
+		object
+			sprite planet/miranda
+			distance 195
+			period 1.4
+		object
+			sprite planet/oberon
+			distance 584
+			period 13
+	object
+		sprite planet/neptune
+		distance 15730
+		period 24012.7
+
+system Arena
+	pos 1887.722 200.278
+	government Drak
+	music music/combat/omitau/omilight
+	haze _menu/haze-gamma
+	object
+		sprite star/k-supergiant
+		period 30
+	object
+		sprite planet/station0
+		distance 500
+		period -20
+
+system Sadalsuud
+	object
+		sprite star/g0
+		distance 24.127
+		period 9.658
+	object
+		sprite star/k8
+		distance 70.425
+		period 9.658
+		offset 180
+	object
+		sprite planet/ice3-b
+		distance 307.989
+		period 56.778
+	object
+		sprite planet/lava2
+		distance 583.399
+		period 148.021
+	object
+		sprite planet/cloud0-b
+		distance 1021.4
+		period 342.901
+		object
+			sprite planet/ice8-b
+			distance 131
+			period 17.109
+	object
+		sprite planet/jupiter
+		distance 1668.01
+		period 715.605
+		object Forpelog
+			sprite planet/rock17
+			distance 274
+			period 13.093
+	object
+		sprite planet/rock7
+		distance 4591.9
+		period 3268.62
+

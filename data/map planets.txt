@@ -1,0 +1,28 @@
+planet "Layline Breach"
+	attributes breach
+	government
+	wormhole "Layline Breach"
+
+wormhole "Layline Breach"
+	"display name" "Layline Breach"
+	mappable
+	link Hyperion Purferation
+	link Purferation Hyperion
+
+planet "Layline Breach Hyperion"
+	attributes breach
+	spaceport ``
+	government Deadzones
+	wormhole "Layline Breach"planet "Layline Breach"
+	attributes breach
+	spaceport ``
+	government Deadzones
+	wormhole "Layline Breach"
+
+planet "Layline Breach Hyperion"
+	attributes breach
+	government
+	wormhole "Layline Breach"
+
+wormhole "Theta Jump Hole"
+	attributes "requires: layline stablizer"

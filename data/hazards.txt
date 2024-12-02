@@ -1,0 +1,33 @@
+hazard "Deadzone Radiation"
+	"constant strength"
+	period 100
+	duration 6 30
+	strength 1 2
+	range 5000
+	"environmental effect" "antimatter spark" 1
+	weapon
+		"hull damage" 10
+		"heat damage" 25
+		"target effect" "ion spark" 1
+
+hazard "Deadzone Radiation Feild"
+	duration 10 500
+	strength 1 100
+	range 1000 25000
+	"environmental effect" "proton impact" 100
+	weapon
+		"shield damage" 15
+		"hull damage" 25
+		"heat damage" 10
+		"target effect" "antimatter dust" 1
+
+hazard "Deadzone Weakfeild"
+	period 50000
+	duration 300 400
+	strength 1 10
+	"environmental effect" "proton impact" 0.2
+	weapon
+		"shield damage" 1
+		"hull damage" 2
+		piercing 1
+

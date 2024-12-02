@@ -1,0 +1,190 @@
+ship Hydrargyrum
+	plural Hydrargyra
+	sprite ship/hydrargyrum
+	thumbnail thumbnail/quicksilver
+	swizzle 3
+	attributes
+		category "Medium Warship"
+		cost 935000
+		"mass" 150
+		"outfit space" 300
+		"engine capacity" 80
+		"weapon capacity" 120
+		"cargo space" 10
+		"shields" 4500
+		"hull" 800
+		"fuel capacity" 600
+		"heat dissipation" 0.8
+		"required crew" 3
+		"drag" 2.7
+		"bunks" 3
+		weapon
+			"blast radius" 40
+			"shield damage" 400
+			"hull damage" 200
+			"hit force" 600
+	outfits
+		"A255 Atomic Steering"
+		"A370 Atomic Thruster"
+		"Crystal Capacitor"
+		"Geode Reactor"
+		"Hai Diamond Regenerator"
+		"Hai Williwaw Cooling"
+		Hyperdrive
+		Mug
+		"Pulse Cannon" 2
+		"Pulse Rifle"
+		"Quantum Keystone"
+		Ramscoop 2
+		"Twin Modified Blaster" 2
+	engine -15.5 54
+	engine 15.5 54
+	gun -6 -39.5 "Pulse Cannon"
+	gun 6 -39.5 "Pulse Cannon"
+	gun -26 7 "Twin Modified Blaster"
+		parallel
+		over
+	gun 26 7 "Twin Modified Blaster"
+		parallel
+		over
+	leak leak 50 50
+	explode "small explosion" 16
+	explode "tiny explosion" 12
+	"final explode" "antimatter spark"
+	"final explode" "final explosion small"
+	description "The Hydrargyrum is a modified version of the syndicate quicksilver, and while it has the capabilitys of a medium warship, this variant is made for the express perpose of evasion and traversal"
+
+ship Cinnabar
+	plural Cannoners
+	sprite ship/Cinibar
+	thumbnail thumbnail/Cinibar
+	attributes
+		category "Medium Warship"
+		cost 5250000
+		"mass" 250
+		"outfit space" 450
+		"engine capacity" 140
+		"weapon capacity" 240
+		"cargo space" 40
+		"shields" 7200
+		"hull" 1400
+		"fuel capacity" 500
+		"heat dissipation" 0.9
+		"required crew" 6
+		"drag" 5.5
+		"automoton" 0
+		"bunks" 8
+		"capital weapon platform" 1
+		weapon
+			"blast radius" 80
+			"shield damage" 800
+			"hull damage" 400
+			"hit force" 1200
+	outfits
+		"A255 Atomic Steering"
+		"A520 Atomic Thruster"
+		"D41-HY Shield Generator"
+		"Fission Reactor"
+		Hyperdrive
+		"LP036a Battery Pack"
+		"Large Radar Jammer"
+		"Laser Rifle" 3
+		"Liquid Sodium Cooler"
+	engine -32 138
+	engine 0 138
+	engine 32 138
+	gun -41 12
+		parallel
+	gun 41 12
+		parallel
+	gun 0 -100
+		parallel
+		over
+	gun -65 0
+		parallel
+		over
+	gun 65 0
+		parallel
+		over
+	turret -53 112
+	turret 0 77
+	turret 53 112
+	leak leak 40 50
+	leak flame 80 80
+	leak "big leak" 80 30
+	explode "large explosion" 16
+	explode "medium explosion" 24
+	explode "small explosion" 40
+	explode "tiny explosion" 28
+	"final explode" "final explosion medium"
+	description "[insert description about the corsairs being a paramilitary group]"
+
+ship "Hauler II"
+
+ship `Protoaster "MESON"`
+	plural "Meson Asters"
+	sprite ship/Meson
+	thumbnail thumbnail/Meson
+	uncapturable
+	attributes
+		category "Heavy Warship"
+		cost 4550000
+		"mass" 380
+		"outfit space" 750
+		"engine capacity" 160
+		"weapon capacity" 400
+		"cargo space" 50
+		"hull" 10800
+		"fuel capacity" 400
+		"heat dissipation" 0.7
+		"drag" 10
+		"automaton" 1
+		"bunks" 0
+		"capital weapons platform" 1
+		weapon
+			"blast radius" 80
+			"shield damage" 800
+			"hull damage" 400
+			"hit force" 1200
+	outfits
+		"A520 Atomic Thruster"
+		"A525 Atomic Steering"
+		"Armageddon Core"
+		"Heavy Anti-Missile Turret" 2
+		Hyperdrive
+		"LP144a Battery Pack"
+		"Large Radar Jammer" 5
+		"Liquid Sodium Cooler"
+		"Particle Cannon" 2
+		"Proton Gun" 2
+		"Quad Blaster Turret" 2
+		"Quantum Keystone"
+		"Water Coolant System" 2
+	engine 0 132
+	"reverse engine" 0 -132
+		zoom 0
+	gun -32 -95 "Proton Gun"
+	gun 32 -95 "Proton Gun"
+	turret 0 -175 "Quad Blaster Turret"
+	turret 0 -75 "Heavy Anti-Missile Turret"
+		under
+	turret 0 75 "Quad Blaster Turret"
+	turret 0 125 "Heavy Anti-Missile Turret"
+		under
+	gun -32 95 "Particle Cannon"
+		parallel
+		over
+	gun 32 95 "Particle Cannon"
+		parallel
+		over
+	leak leak 60 50
+	leak flame 40 80
+	leak "big leak" 80 30
+	explode "large explosion" 15
+	explode "medium explosion" 30
+	explode "small explosion" 25
+	explode "tiny explosion" 10
+	"final explode" "final explosion medium"
+	description "The Meson Prototype Aster frame is the breakthrough tech of fully atonomous semi sentient ships developed by paradox."
+	description "Unlike the mesons sister ship, the Baryon, the meson is made strictly for combat, with the weapons and hull compliment to back it up."
+
