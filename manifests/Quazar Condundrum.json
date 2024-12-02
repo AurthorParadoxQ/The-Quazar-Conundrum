@@ -6,3 +6,6 @@ version: V0.1.5
 shortDescription: An Odyssey Spanning 100 years
 description: The Quazar Conundrum is a massive century spanning story involving a galxy spanning threat, changing hegemony and new factions rising to power.
 url: https://github.com/AurthorParadoxQ/The-Quazar-Conundrum/releases/tag/Major_ReleaseV015
+autoupdate
+	type:tag
+	url:https://github.com/AurthorParadoxQ/The-Quazar-Conundrum
