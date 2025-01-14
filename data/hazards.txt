@@ -31,3 +31,14 @@ hazard "Deadzone Weakfeild"
 		"hull damage" 2
 		piercing 1
 
+hazard "Omicron Deepwell Field"
+	period 1800
+	duration 200 1800
+	strength 0.5 6
+	"environmental effect" "yellow spark twinkle" 5
+	weapon
+		"hull damage" 0.25
+		"ion damage" 0.25
+		"relative hull damage" 0.025
+		piercing 1
+

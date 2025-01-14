@@ -7,13 +7,13 @@ system Purferation
 	belt 0
 	haze _menu/haze-deadzonedeep
 	link "Deadzone One"
-	hazard "Black Hole Accretion Disk" 30
+	hazard "" 30
 	hazard "Deadzone Radiation" 3
 	object
 		sprite star/nova-old-core
 			scale 10
 			"frame rate" 24
-		distance 1000
+		distance 1005.365
 		period 100
 		offset 25
 	object
@@ -22,7 +22,7 @@ system Purferation
 			"frame rate" 20
 		distance 500
 		period 100
-		hazard "Black Hole Accretion Disk" 1
+		hazard "" 1
 	object "Layline Breach"
 		sprite planet/layline-rift
 			scale 3

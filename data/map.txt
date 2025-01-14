@@ -13,7 +13,7 @@ system Purferation
 		sprite star/nova-old-core
 			scale 10
 			"frame rate" 24
-		distance 1000
+		distance 1005.365
 		period 100
 		offset 25
 	object
@@ -162,6 +162,7 @@ system Hyperion
 	pos -188.667 4815.222
 	government Miri
 	attributes breach wormhole
+	music music/combat/miri/miricore
 	habitable 0
 	belt 0
 	haze _menu/haze-deadzone
@@ -237,6 +238,7 @@ system Nona
 
 system Rubicon
 	pos 333.75 655.417
+	government "Quazar Worlds"
 	habitable 3255
 	belt 3500 75
 	belt 7500 25
@@ -1025,7 +1027,7 @@ system Devil-Hide
 			period 18.579
 
 system Tau-45
-	pos -747 -876
+	pos -67 -1260
 	government Uninhabited
 	belt 0
 	haze _menu/haze-omitau
@@ -1260,7 +1262,7 @@ system Tau-54
 	government Uninhabited
 	music music/ambient/omitau/tauspace
 	haze _menu/haze-omitau
-	link "Omicron Gamma"
+	link Tau-60
 	link Wezen
 
 system "Omicron Theta"
@@ -1342,6 +1344,8 @@ system "Omicron Alpha"
 	link "Omicron Beta"
 	link "Omicron Theta"
 	link Tau-37
+	asteroids exotic 25 0
+	hazard "Omicron Deepwell Field" 800
 	object
 		sprite star/OmicronBstar
 		distance 250
@@ -1384,10 +1388,10 @@ system "Omicron Gamma"
 	arrival 5000
 	habitable 5000
 	belt 12500
-	haze _menu/haze-gamma
+	haze _menu/haze-gamma/haze-gamma
 	link "Omicron Kappa"
 	link "Omicron Theta"
-	link Tau-54
+	link "Omicron Xi"
 	object
 		sprite star/k-supergiant
 			scale 2
@@ -1410,9 +1414,11 @@ system "Omicron Beta"
 	pos -92.741 -1130.074
 	government Uninhabited
 	music music/ambient/omitau/omispace
+	haze _menu/haze-edgedense
 	link "Omicron Alpha"
 	link "Omicron Kappa"
 	link "Omicron Theta"
+	asteroids exotic 1000 0
 
 planet "Planet Kurlile"
 	music music/ambient/omitau/omispace
@@ -1607,6 +1613,7 @@ system Tau-37
 	haze _menu/haze-omitau
 	link "Omicron Alpha"
 	link Tau-23
+	link Tau-41
 
 system Tau-29
 	pos 235 -1242.75
@@ -1624,6 +1631,7 @@ system Tau-23
 	link Tau-29
 	link Tau-31
 	link Tau-37
+	link Tau-39
 
 system Tau-31
 	pos 317 -1298.75
@@ -1672,11 +1680,14 @@ system Edusa
 system "Omicron Psi"
 	pos -220.667 -1307
 	government Miri
-	haze _menu/haze-nomad
+	music music/combat/miri/miriheavy
+	haze _menu/haze-corrupted
 
 system "Omicron Iota"
 	pos -206.667 -1364.069
 	government Miri
+	music music/combat/miri/miriultra
+	haze _menu/haze-nomad/haze-nomad
 
 system Tau-25
 	pos 540.5 -1390.5
@@ -1739,6 +1750,8 @@ system "Omicron Kappa"
 	haze _menu/haze-edge
 	link "Omicron Beta"
 	link "Omicron Gamma"
+	asteroids "small rock" 25 0.1
+	asteroids exotic 75 0
 
 system Magellen
 	pos 845.25 -1064
@@ -2045,4 +2058,230 @@ system Sadalsuud
 		sprite planet/rock7
 		distance 4591.9
 		period 3268.62
+
+system "Omicron Nu"
+	pos -449.333 -847.167
+	government "Quazar Worlds"
+	music music/ambient/omitau/omispace
+	habitable 3500
+	haze _menu/haze-gamma/haze-gamma
+	link "Omicron Xi"
+	object
+		sprite star/OmicronAstar
+			scale 4
+
+system "Omicron Xi"
+	pos -391.667 -956.5
+	government Uninhabited
+	music music/combat/omitau/omiheavy
+	habitable 10000
+	haze _menu/haze-warzone/haze-warzone
+	link "Omicron Fau"
+	link "Omicron Gamma"
+	link "Omicron Nu"
+	link "Omicron Zeta"
+	object
+		sprite star/OmicronBstar
+			scale 10
+
+system "Kor Ak'Mari"
+	object
+		sprite star/carbon
+		period 100
+	object
+		sprite star/carbon-core
+		period 100
+	object
+		sprite planet/lava0-b
+		distance 492.58
+		period 78.541
+	object
+		sprite star/k-dwarf
+		distance 790
+		period 159.521
+		object
+			sprite planet/lava6
+			distance 79.89
+			period 38.604
+	object
+		sprite planet/oberon
+		distance 1807.64
+		period 552.137
+	object
+		sprite planet/ocean6-b
+		distance 2874.19
+		period 1107.01
+		object
+			sprite planet/callisto-b
+			distance 166
+			period 16.23
+	object
+		sprite planet/ice0-b
+		distance 3777.8
+		period 1668.15
+
+system "Omicron Fau"
+	pos -333 -1067.333
+	government Uninhabited
+	music music/ambient/omitau/omispace
+	haze _menu/haze-omicronlight
+	link "Omicron Xi"
+
+system "Omicron Zeta"
+	pos -513.667 -948.667
+	government Miri
+	music music/combat/miri/mirilight
+	habitable 2500
+	haze _menu/haze-edge
+	link "Omicron Xi"
+	link Tau-60
+	object
+		sprite star/OmicronAstar
+			scale 0.5
+			"frame rate" 4
+		distance 400
+		period 300
+	object
+		sprite star/OmicronBstar
+		distance 200
+		period 300
+		offset 200
+	object
+		sprite star/OmicronKgiant
+		distance 3000
+		period 566
+
+system Cardea
+	object
+		sprite star/k5-old
+		distance 32.841
+		period 11.814
+		offset 180
+	object
+		sprite star/k5
+		distance 73.41
+		period 11.814
+	object
+		sprite planet/desert7-b
+		distance 310.94
+		period 59.146
+	object
+		sprite planet/rock2-b
+		distance 679.55
+		period 191.091
+	object
+		sprite planet/miranda-b
+		distance 1021.548
+		period 351.297
+	object Crataegusa
+		sprite planet/neptune-b
+		distance 1540.63
+		period 652.313
+		object
+			sprite planet/callisto
+			distance 227
+			period 17.04
+	object "Ember Threshold"
+		sprite planet/wormhole-red
+		distance 2550
+		period 1389.05
+	object "Ember Wormhole"
+		sprite planet/wormhole-red
+		distance 3302.92
+		period 2047.64
+
+system "Omicron Epsilon"
+	pos -24.167 -942.333
+	government Uninhabited
+	haze _menu/haze-omideep2/haze-omideep2
+
+system Tau-39
+	pos 137.833 -1318.333
+	government Uninhabited
+	haze _menu/haze-skystrato
+	link Tau-23
+	link Tau-43
+
+system Tau-41
+	pos 52.5 -1279.667
+	government Uninhabited
+	haze _menu/haze-omitauedge
+	link Tau-37
+	link Tau-43
+
+system Tau-43
+	pos 2.5 -1332.333
+	government Miri
+	haze _menu/haze-mirisky/haze-skymiri
+	link Tau-39
+	link Tau-41
+
+system "Omicron Eta"
+	pos 45.167 -1037
+	government Miri
+	haze _menu/haze-omideep/haze-omideep
+	link "Omicron Mu"
+	hazard "Omicron Deepwell Field" 1500
+
+system "Omicron Mu"
+	pos 174.5 -1094.333
+	government Miri
+	haze _menu/haze-omideep/haze-omideep
+	link "Omicron Chi"
+	link "Omicron Eta"
+	hazard "Omicron Deepwell Field" 900
+
+system "Omicron Pi"
+	pos 170.5 -901
+	government Uninhabited
+	haze _menu/haze-33
+
+system "Omicron Chi"
+	pos 171.167 -1017.667
+	government Uninhabited
+	"jump range" 150
+	haze _menu/haze-omideep2/haze-omideep2
+	link "Omicron Mu"
+
+system "Omicron Rho"
+	pos 379 -1030.667
+	government Uninhabited
+	haze _menu/haze-omideep2/haze-omideep2
+	link "Omicron Lambda"
+	link "Omicron Upsilon"
+
+system "Omicron Upsilon"
+	pos 395 -1153
+	government Uninhabited
+	"jump range" 130
+	haze _menu/haze-omideep2/haze-omideep2
+	link "Omicron Rho"
+
+system "Omicron Lambda"
+	pos 269 -962
+	government Miri
+	"jump range" 115
+	haze _menu/haze-omideep/haze-omideep
+	link "Omicron Rho"
+	hazard "Omicron Deepwell Field" 3000
+
+system "Omicron Phi"
+	pos 269 -1152
+	government Miri
+	music music/combat/miri/miriultra
+	"jump range" 300
+	haze _menu/haze-omicore/haze-omicore
+	hazard "Omicron Deepwell Field" 750
+
+system Tau-60
+	pos -567 -879
+	government Uninhabited
+	link "Omicron Zeta"
+	link Tau-54
+
+system Tau-56
+	pos -636 -980
+
+system Tau-72
+	pos -643 -646
 
